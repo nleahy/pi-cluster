@@ -12,3 +12,5 @@ sudo su -
 curl -sfL https://get.k3s.io | INSTALL_K3S_EXEC="--disable=helm-controller" sh
 
 sudo systemctl status k3s.service
+
+sudo cp /etc/rancher/k3s/k3s.yaml .
