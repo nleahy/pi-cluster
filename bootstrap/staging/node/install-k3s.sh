@@ -18,6 +18,6 @@ export SERVER_IP
 #install k3s
 sudo su -
 
-curl -sfL https://get.k3s.io | INSTALL_K3S_EXEC="--disable=helm-controller" K3S_URL=https://$SERVER_IP:6443 K3S_TOKEN=$NODE_TOKEN sh -
+curl -sfL https://get.k3s.io | INSTALL_K3S_EXEC="agent" K3S_URL=https://$SERVER_IP:6443 K3S_TOKEN=$NODE_TOKEN sh -
 
 sudo systemctl status k3s.service
