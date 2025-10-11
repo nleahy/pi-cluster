@@ -1,0 +1,21 @@
+apiVersion: v1
+data:
+    cert.pem: ENC[AES256_GCM,data:+0jlbYv5fG7lej85J1w+5c7Ik1PFLbtr5KJ7Ah/BTeRpvcj63fCQCoBmeXtQ4J2QGGVMUuCYX/eOJ3ned3m1Z19RO0UDsvI+S4WZ6ePaIfQIrDpqo8eoT4DXlT0iOhJuGlGbSAq0W5JwtkT5nNjfVcNl7c4agGHHT4c/8L7T//tEZ+IYWWpDJXktMOfESHnR/DKBbIWQ+3DdPdaywBdlDamJm+vM4LrRnGBz2rjLYpXwNsNE0gzA/ZD2fJZmlplPoYgpqc+ddyQnPuUpKxJBT8qKYBRgB2f56+SvP/Fr2pphOhOf/SpE1U07JYvfRNj9XZtLkOgUI2ti9aCIlmoxNQAkpvJamLJmfEaEEDEOPEno4WflP1gsQS86W9eYxpqwAq4k/Vzar85Sqo8DQI7tHQ+zOfFDjbklO15r1r00lIq6qJ61MxfXTT5HuhM28xU9kCN07vOwCWM+5YlIRKq6m4VOlbo=,iv:2QRDMHq6zvSTjbbw5C1DncrrT+QsMS8HykIl6XkwzqI=,tag:KhxOz9Q+5sy5gAWk/eQnhg==,type:str]
+kind: Secret
+metadata:
+    name: certificates
+sops:
+    age:
+        - recipient: age1zhwwl4kztlsqdcc4x7tvxschrr2z0625uade2vzuf0rnaeemmusq5x7aen
+          enc: |
+            -----BEGIN AGE ENCRYPTED FILE-----
+            YWdlLWVuY3J5cHRpb24ub3JnL3YxCi0+IFgyNTUxOSB6MHYwV0dwK2NseU93cTE2
+            SGhKY3hZSnpWVVFpMnlqQ3h4NEdWek5lVTFJClVKdUdHOXVsUk1kZ25xQ3dUKzUz
+            Y2xxaHpqWnNWZHVWSG1QY0ZCZ044VGcKLS0tIEwyUnE4OTVMZVhnOENTaW9YSjVQ
+            c0xBdC8wK1VGRjJMWUVHL3JFdjFLZU0K3qvMKrcAZ1LRazNxRI3EmkG6ZPjjxJrS
+            01thzkVpIsuoHHAzUlPuYEnk6mB5Lu/USLVpkKRRPL/LYnSz1im0Ww==
+            -----END AGE ENCRYPTED FILE-----
+    lastmodified: "2025-10-01T00:59:26Z"
+    mac: ENC[AES256_GCM,data:jOy3fZn09MTMVwGBGJeilmDjoDwmXIum+DRC7LSedDmtG6AL3tCttcPzl+wYyMfb6UCZ8ajdUGeor9ESXMF3Ui5K51DozTjJoktkrSe0TP1vw0qXMSJYygmkYCvaIJLk7TlbgvCFWOFCVkIhrNhCmz86jQBl1xbItGKIfvKjozU=,iv:kMRCsAvdjZNXL8bOJ6x+kQ2D19qUudPJIZtIcXFUGP8=,tag:YOtpscwADun94gKGC+k/IQ==,type:str]
+    encrypted_regex: ^(data|stringData)$
+    version: 3.10.2
