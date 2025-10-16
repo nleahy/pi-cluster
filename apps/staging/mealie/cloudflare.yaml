@@ -42,17 +42,10 @@ spec:
         - name: creds
           mountPath: /etc/cloudflared/creds
           readOnly: true
-        - name: certs
-          mountPath: /etc/cloudflared/
-          readOnly: true
       volumes:
       - name: creds
         secret:
-          secretName: tunnel-credentials
-
-      - name: certs
-        secret:
-          secretName: certificates
+          secretName: mealie-tunnel-credentials
 
       # Create a config.yaml file from the ConfigMap below.
       - name: config
@@ -73,7 +66,7 @@ metadata:
 data:
   config.yaml: |
     # Name of the tunnel you want to run
-    tunnel: audiobookshelf
+    tunnel: mealie
 
     credentials-file: /etc/cloudflared/creds/credentials.json
 
@@ -82,8 +75,8 @@ data:
     no-autoupdate: true
 
     ingress:
-    - hostname: audio.nathanleahy.net
-      service: http://audiobookshelf:3005
+    - hostname: meals.nathanleahy.net
+      service: http://mealie:9000
 
     # This rule sends traffic to the built-in hello-world HTTP server. This can help debug connectivity
     # issues. If hello.example.com resolves and tunnel.example.com does not, then the problem is
