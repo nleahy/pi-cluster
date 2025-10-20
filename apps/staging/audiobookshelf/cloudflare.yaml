@@ -42,17 +42,11 @@ spec:
         - name: creds
           mountPath: /etc/cloudflared/creds
           readOnly: true
-        - name: certs
-          mountPath: /etc/cloudflared/
-          readOnly: true
+
       volumes:
       - name: creds
         secret:
           secretName: tunnel-credentials
-
-      - name: certs
-        secret:
-          secretName: certificates
 
       # Create a config.yaml file from the ConfigMap below.
       - name: config
