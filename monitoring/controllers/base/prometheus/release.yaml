@@ -28,10 +28,9 @@ spec:
   values:
     grafana:
       adminPassword:
-        secret:
-          secretName: grafana-password
+        secretName: grafana-password
       ingress:
-        enabled: true
+        enabled: false
         ingressClassName: traefik
 
         hosts:
