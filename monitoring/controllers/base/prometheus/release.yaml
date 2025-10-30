@@ -29,7 +29,7 @@ spec:
     grafana:
       adminPassword:
         secret:
-          secretName: tunnel-credentials
+          secretName: grafana-password
       ingress:
         enabled: true
         ingressClassName: traefik
