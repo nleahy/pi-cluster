@@ -21,14 +21,14 @@
  kind: Kustomization
  metadata:
    name: infrastructure-databases
-   namespace: flux-system
+   namespace: databases
  spec:
    interval: 1m0s
    retryInterval: 1m
    timeout: 5m
    sourceRef:
      kind: GitRepository
-     name: flux-system
+     name: cloudnative-pg
    path: ./infrastructure/databases/staging
    prune: true
    decryption:
