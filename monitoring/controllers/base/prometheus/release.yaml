@@ -25,17 +25,18 @@ spec:
       - paths: ["/metadata/annotations/prometheus-operator-validated"]
         target:
           kind: PrometheusRule
+  env:
+  - name: default_password
+    valueFrom:
+      secretKeyRef:
+        name: grafana-password
+        key: password
   values:
-    grafana:
-      adminPassword:
-        secretName: grafana-password
+    grafana: 
+      adminPassword: default_password
       ingress:
         enabled: true
         ingressClassName: traefik
-
         hosts:
           - grafana.nathanleahy.net
-        tls:
-          - secretName: grafana-tls-secret
-            hosts:
-              - grafana.nathanleahy.net
+
