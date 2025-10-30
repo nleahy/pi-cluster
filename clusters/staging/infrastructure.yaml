@@ -21,7 +21,7 @@
  kind: Kustomization
  metadata:
    name: infrastructure-databases
-   namespace: databases
+   namespace: flux-system
  spec:
    interval: 1m0s
    retryInterval: 1m
