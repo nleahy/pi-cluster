@@ -16,22 +16,3 @@
 #     provider: sops
 #     secretRef:
 #       name: sops-age
----
- apiVersion: kustomize.toolkit.fluxcd.io/v1
- kind: Kustomization
- metadata:
-   name: databases
-   namespace: flux-system
- spec:
-   interval: 1m0s
-   retryInterval: 1m
-   timeout: 5m
-   sourceRef:
-     kind: GitRepository
-     name: cloudnative-pg
-   path: ./infrastructure/databases/staging
-   prune: true
-   decryption:
-     provider: sops
-     secretRef:
-       name: sops-age
