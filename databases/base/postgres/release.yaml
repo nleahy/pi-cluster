@@ -7,7 +7,7 @@ spec:
   interval: 60m
   chart:
     spec:
-      chart: cloudnative-pg
+      chart: cnpg/cloudnative-pg
       version: "0.26.*"
       sourceRef:
         kind: HelmRepository
