@@ -12,6 +12,6 @@ spec:
       sourceRef:
         kind: HelmRepository
         name: cloudnative-pg
-        namespace: database
+        namespace: databases
       interval: 60m
 
