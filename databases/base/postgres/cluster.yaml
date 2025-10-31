@@ -1,11 +1,9 @@
 apiVersion: postgresql.cnpg.io/v1
 kind: Cluster
 metadata:
-  name: foo
+  name: demo-cluster
   namespace: database
 spec:
-  instances: 1
-  primaryUpdateStrategy: unsupervised
-  enableSuperuserAccess: true
+  instances: 3
   storage:
     size: 1Gi
