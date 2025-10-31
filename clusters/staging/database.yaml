@@ -9,7 +9,7 @@
    timeout: 5m
    sourceRef:
      kind: GitRepository
-     name: cloudnative-pg
+     name: flux-system
    path: ./databases/staging
    prune: true
    decryption:
