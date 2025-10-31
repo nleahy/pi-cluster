@@ -14,4 +14,7 @@ spec:
         name: cloudnative-pg
         namespace: databases
       interval: 60m
-
+  install:
+    crds: Create
+  upgrade:
+    crds: CreateReplace
