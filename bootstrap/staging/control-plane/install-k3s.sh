@@ -6,6 +6,9 @@ sudo apt install vim
 #update cdmline.txt to include cgroup
 sudo sed -i '$s/$/ cgroup_memory=1 cgroup_enable=memory/' /boot/firmware/cmdline.txt
 
+#reboot
+sudo reboot
+
 #install k3s
 sudo su -
 
