@@ -13,4 +13,4 @@ export BRANCH=main
 export PATH=./clusters/staging
 
 #bootstrap flux
-flux bootstrap github --owner=$GITHUB_USER --repository=$REPOSITORY --branch=$BRANCH--path=$PATH --personal
+flux bootstrap github --owner=$GITHUB_USER --repository=$REPOSITORY --branch=$BRANCH --path=$PATH --personal
