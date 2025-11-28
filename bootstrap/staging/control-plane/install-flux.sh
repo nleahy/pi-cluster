@@ -10,7 +10,7 @@ sudo cp /etc/rancher/k3s/k3s.yaml .kube/config
 export GITHUB_USER=nleahy
 export REPOSITORY=pi-cluster
 export BRANCH=main
-export PATH=./clusters/staging
+export FLUXPATH=./clusters/staging
 
 #bootstrap flux
-flux bootstrap github --owner=$GITHUB_USER --repository=$REPOSITORY --branch=$BRANCH --path=$PATH --personal
+flux bootstrap github --owner=$GITHUB_USER --repository=$REPOSITORY --branch=$BRANCH --path=$FLUXPATH --personal
