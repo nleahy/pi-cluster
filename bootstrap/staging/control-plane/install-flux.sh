@@ -1,9 +1,10 @@
 #!/bin/bash
 
 #install flux
-sudo curl -s https://fluxcd.io/install.sh | sudo bash
+curl -s https://fluxcd.io/install.sh | bash
 
 #create kube config
+mkdir .kube
 sudo cp /etc/rancher/k3s/k3s.yaml .kube/config
 
 #environment variables

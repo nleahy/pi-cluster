@@ -1,0 +1,21 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: fail-deployment-image
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: fail-app
+  template:
+    metadata:
+      labels:
+        app: fail-app
+    spec:
+      containers:
+      - name: test-container
+        # The image 'nginx:v1.0.0' is used here as a placeholder for a non-existent tag.
+        # In a real scenario, this specific tag might not exist or be accessible.
+        image: nginx:v1.0.0 
+        ports:
+        - containerPort: 80
