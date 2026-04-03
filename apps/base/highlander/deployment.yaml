@@ -1,0 +1,26 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  labels:
+    app: highlander
+  name: highlander
+  namespace: highlander
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: highlander
+  template:
+    metadata:
+      labels:
+        app: highlander
+    spec:
+      securityContext:
+        fsGroup: 33
+        runAsUser: 33
+        runAsGroup: 33
+      containers:
+        - image: ghcr.io/nleahy/HelloVapor:trunk
+          name: highlander
+          ports:
+          -  containerPort: 9000
