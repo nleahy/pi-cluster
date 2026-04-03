@@ -4,7 +4,7 @@ metadata:
   name: highlander
 spec:
   ports:
-  - port: 9000
+  - port: 9001
   selector:
     app: highlander
   type: ClusterIP
