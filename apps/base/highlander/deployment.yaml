@@ -33,6 +33,8 @@ spec:
           env:
           - name: DATABASE_URL
             value: "postgres://app@highlander-db-rw.highlander:5432/app"
+          - name: DATABASE_HOST
+            value: "highlander-db-rw"
           - name: DATABASE_PASSWORD
             valueFrom:
               secretKeyRef:
