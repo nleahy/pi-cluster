@@ -27,9 +27,9 @@ spec:
           - "--hostname"
           - "0.0.0.0"
           - "--port"
-          - "9001"   # Your custom port
+          - "9001"
           - "--env"
-          - "development" # Or whatever env you need
+          - "development"
           env:
           - name: DATABASE_URL
             value: "postgres://app@highlander-db-rw.highlander:5432/app?sslmode=disable"
