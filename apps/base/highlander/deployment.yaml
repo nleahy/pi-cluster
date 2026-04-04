@@ -20,7 +20,7 @@ spec:
         runAsUser: 33
         runAsGroup: 33
       containers:
-        - image: ghcr.io/nleahy/hellovapor:trunk
+        - image: ghcr.io/nleahy/hello-vapor:trunk
           name: highlander
           ports:
           -  containerPort: 9001
