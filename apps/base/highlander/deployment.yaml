@@ -20,7 +20,7 @@ spec:
         runAsUser: 33
         runAsGroup: 33
       containers:
-        - image: ghcr.io/nleahy/hello-vapor@sha256:3ec4864f976ea8d2b83b59d1ea74b294a973689ed55940ef1581c27851d4631d
+        - image: ghcr.io/nleahy/hello-vapor@sha256:52cb2ed9f6c0796d66256547e99e428117cc648ab7628a74b9535c23138cafd7
           name: highlander
           args: 
           - "serve"
@@ -32,7 +32,7 @@ spec:
           - "development" # Or whatever env you need
           env:
           - name: DATABASE_URL
-            value: "postgres://app@highlander-db-rw.highlander:5432/app"
+            value: "postgres://app@highlander-db-rw.highlander:5432/app?sslmode=disable"
           - name: DATABASE_HOST
             value: "highlander-db-rw"
           - name: DATABASE_PASSWORD
