@@ -6,7 +6,7 @@ metadata:
 spec:
   interval: 1m0s
   dependsOn:
-    - name: databases
+    - name: database-dependencies
   retryInterval: 1m
   timeout: 5m
   sourceRef:
