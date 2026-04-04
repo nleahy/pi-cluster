@@ -20,7 +20,7 @@ spec:
         runAsUser: 33
         runAsGroup: 33
       containers:
-        - image: ghcr.io/nleahy/hello-vapor:trunk
+        - image: ghcr.io/nleahy/hello-vapor:v0.0.1
           name: highlander
           env:
           - name: DATABASE_URL
