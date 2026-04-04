@@ -22,6 +22,14 @@ spec:
       containers:
         - image: ghcr.io/nleahy/hello-vapor:trunk
           name: highlander
+          env:
+          - name: DATABASE_URL
+            value: "postgres://app@highlander-db-rw.highlander:5432/app"
+          - name: DATABASE_PASSWORD
+            valueFrom:
+              secretKeyRef:
+                name: highlander-db-app
+                key: password
           ports:
           -  containerPort: 9001
       imagePullSecrets:
