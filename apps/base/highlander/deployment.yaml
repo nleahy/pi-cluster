@@ -20,7 +20,7 @@ spec:
         runAsUser: 33
         runAsGroup: 33
       containers:
-        - image: ghcr.io/nleahy/hello-vapor@sha256:22bc76d87652f82fd98bc48522effa672cd70455fe587803b60585d2fe0bd9bb
+        - image: ghcr.io/nleahy/hello-vapor@sha256:f2a4661b213e8735de39918ad608df8b9dad9c8c258dec63f2f5c3be74bca810
           name: highlander
           args: 
           - "serve"
