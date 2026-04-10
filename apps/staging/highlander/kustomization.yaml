@@ -5,3 +5,7 @@ resources:
   - ../../base/highlander
   - cloudflare.yaml
 
+images:
+  - name: highlander
+    newName: ghcr.io/nleahy/hello-vapor
+    digest: sha256:cbbba7ef315a48317b528911ad5154b1e722fe044355f50275f8ec59258c9ff7
