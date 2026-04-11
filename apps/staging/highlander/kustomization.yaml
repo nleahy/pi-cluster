@@ -8,4 +8,4 @@ resources:
 images:
   - name: highlander
     newName: ghcr.io/nleahy/hello-vapor
-    digest: sha256:5da94aec3d1575b52631235d4627fa379761242007fb4f84b556adc77f75b3e5
+    digest: sha256:54f8ee360c50faa7ab0e5bc61c5b8e5f7c61d160324948846b5523079e7e7499
